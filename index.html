@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  
   <!--Favicon-->
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
 
-  <!--Vínculo CSS-->
+  <!-- Vínculo Css -->
   <link rel="stylesheet" href="assets/css/styles.css" />
-
+  
   <!--Título-->
   <title>Encuentra tu Super Hero</title>
 
@@ -20,19 +20,62 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:wght@100..700&family=Raleway:wght@100;300&family=Rubik+Doodle+Shadow&family=Russo+One&display=swap" rel="stylesheet" />
+  
+  
 </head>
 <body>
  
+  <!-- #region Navbar-->
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        Bootstrap
+      </a>
+    </div>
+  </nav>
+  <!-- #endregion -->
+
+  <!-- #region Section-->
+  <main class="container">
+    <section id="search">
+      <img src="assets/img/sh1.jpg" alt="Imagen de Superhéroe">
+      <h1>Encuentra tu Superhéroe</h1>
+      <p>Ingresa el número de tu Superhéroe a buscar</p>
+      <form id="searchForm">
+        <div class="input-group mb-3">
+          <input type="text" id="heroNumber" class="form-control" placeholder="Número del Superhéroe" required>
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">Buscar</button>
+          </div>
+        </div>
+      </form>
+    </section>
   
+ <!-- Contenedor de las tarjetas y el gráfico -->
+<div class="row">
+    <!-- Tarjeta del superhéroe -->
+    <div class="col-md-6" id="heroDetails">
+      <!-- Aquí se mostrarán las tarjetas de información del superhéroe -->
+    </div>
+    <!-- Gráfico de pastel -->
+    <div class="col-md-6" id="heroStatsChartContainer">
+      <div id="heroStatsChart" style="height: 300px;"></div>
+    </div>
+  </div>
+  
+  
+  <!-- #endregion -->
 
+  <!-- Vínculo a Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <!--Vínculo a Jquery-->
-  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-
-  <!-- Vínculo a Canvas Js -->
+  <!--Vínculo a Canvas Js-->
   <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
-
+  
+  
   <!--Vínculo a Js-->
   <script src="assets/js/script.js"></script>
 </body>
 </html>
+

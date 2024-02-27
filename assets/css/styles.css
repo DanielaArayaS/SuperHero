@@ -1,0 +1,10 @@
+/* Estilo para la tarjeta */
+.card {
+    max-width: 50%;
+  }
+  
+  /* Estilo para el gráfico */
+  #heroStatsChart {
+    max-width: 50%;
+  }
+  
