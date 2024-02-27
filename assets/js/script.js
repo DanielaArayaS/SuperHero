@@ -1,6 +1,6 @@
 // Función para capturar la información ingresada por el usuario
 function capturarInformacion() {
-    var heroNumber = $('#heroNumber').val();
+    let heroNumber = $('#heroNumber').val();
     return heroNumber;
   }
   
@@ -45,7 +45,7 @@ function mostrarInformacion(superhero) {
   
   // Función para mostrar el gráfico de pastel con las estadísticas del superhéroe
   function mostrarGrafico(powerstats) {
-    var stats = [
+    let stats = [
       { label: "Durabilidad", y: parseInt(powerstats.durability) || 0 },
       { label: "Velocidad", y: parseInt(powerstats.speed) || 0 },
       { label: "Fuerza", y: parseInt(powerstats.strength) || 0 },
@@ -54,7 +54,7 @@ function mostrarInformacion(superhero) {
       { label: "Poder", y: parseInt(powerstats.power) || 0 }
     ];
   
-    var options = {
+    let options = {
       animationEnabled: true,
       title: {
         text: "Estadísticas del Superhéroe"
@@ -76,7 +76,7 @@ function mostrarInformacion(superhero) {
     $('#searchForm').submit(function(event) {
       event.preventDefault(); // Evita el envío del formulario por defecto
       
-      var heroNumber = capturarInformacion(); // Captura la información ingresada por el usuario
+      let heroNumber = capturarInformacion(); // Captura la información ingresada por el usuario
       
       // Comprobar si el valor ingresado es un número
       if ($.isNumeric(heroNumber)) {
